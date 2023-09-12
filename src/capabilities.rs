@@ -47,7 +47,7 @@ pub struct Capabilities {
     pub scalar_types: Option<IndexMap<ScalarType, ScalarTypeCapabilities>>,
     pub subscriptions: Option<serde_json::Value>,
     pub user_defined_functions: Option<serde_json::Value>,
-    pub post_schema_capabilities: Option<serde_json::Value>,
+    pub post_schema: Option<serde_json::Value>,
 }
 
 #[skip_serializing_none]
